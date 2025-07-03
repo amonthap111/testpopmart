@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.register {
+  padding: 15px 30px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.hide {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.show.active {
+  display: block;
+}
+
+.drawer-detail {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.drawer-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.branch-item {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.branch-item.selected {
+  background-color: #dd0420;
+  color: white;
+}
+
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.date-item {
+  padding: 10px;
+  background-color: #ddd;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.date-item.selected {
+  background-color: #dd0420;
+  color: white;
+}
+
+.time-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.time-slot {
+  padding: 10px;
+  background-color: #ddd;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-slot.selected {
+  background-color: #dd0420;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.branch-item.selected,
+.date-item.selected {
+  background-color: #ff5a5a;
+  color: white;
+}

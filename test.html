@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>popmart test</title>
+  <link rel="stylesheet" href="assets/css/locaction.css">
+  <link rel="stylesheet" href="assets/css/date.css">
+ 
+  
+</head>
+<body>
+ <div  class="register" style="background-color: rgb(221, 4, 32);" id="step1" id="nextBtn" onclick="registerbtn()">Register</div>
+
+
+ <div class="location hide" id="location">
+  <div class="drawer-detail">
+    <div class="drawer-title">Select Branch</div>
+
+    <div class="branch-item" onclick="selectlocation(this)">Terminal 21</div>
+    <div class="branch-item"  onclick="selectlocation(this)">Central Ladprao</div>
+    <div class="branch-item"  onclick="selectlocation(this)">Siam Center</div>
+    <div class="branch-item"  onclick="selectlocation(this)">Fashion Island</div>
+    <div class="branch-item" onclick="selectlocation(this)">Centralworld</div>
+    <div class="branch-item" onclick="selectlocation(this)">MEGABANGNA</div>
+    <div class="branch-item" onclick="selectlocation(this)">Siam Square</div>
+    <div class="branch-item" onclick="selectlocation(this)">Emsphere</div>
+    <div class="branch-item" onclick="selectlocation(this)">Central Pattaya</div>
+    <div class="branch-item" onclick="selectlocation(this)">Seacon Square</div>
+    <div class="branch-item" onclick="selectlocation(this)">Central Westgate</div>
+    <div class="branch-item" onclick="selectlocation(this)">Central Chiangmai</div>
+    <div class="branch-item" onclick="selectlocation(this)">Discovery Plaza</div>
+    
+    <button id="nextBtn" onclick="nextStep()" class="next" disabled>Next</button>
+  </div>
+</div>
+
+
+  <div class="date hide" id="date">
+  <h2>เลือกวันที่</h2>
+  <div class="date-grid">
+    <!-- สร้างวันที่ 1 ถึง 31 -->
+    <div class="date-item" onclick="selectDate(this)">1</div>
+    <div class="date-item" onclick="selectDate(this)">2</div>
+    <div class="date-item" onclick="selectDate(this)">3</div>
+    <div class="date-item" onclick="selectDate(this)">4</div>
+    <div class="date-item" onclick="selectDate(this)">5</div>
+    <div class="date-item" onclick="selectDate(this)">6</div>
+    <div class="date-item" onclick="selectDate(this)">7</div>
+    <div class="date-item" onclick="selectDate(this)">8</div>
+    <div class="date-item" onclick="selectDate(this)">9</div>
+    <div class="date-item" onclick="selectDate(this)">10</div>
+    <div class="date-item" onclick="selectDate(this)">11</div>
+    <div class="date-item" onclick="selectDate(this)">12</div>
+    <div class="date-item" onclick="selectDate(this)">13</div>
+    <div class="date-item" onclick="selectDate(this)">14</div>
+    <div class="date-item" onclick="selectDate(this)">15</div>
+    <div class="date-item" onclick="selectDate(this)">16</div>
+    <div class="date-item" onclick="selectDate(this)">17</div>
+    <div class="date-item" onclick="selectDate(this)">18</div>
+    <div class="date-item" onclick="selectDate(this)">19</div>
+    <div class="date-item" onclick="selectDate(this)">20</div>
+    <div class="date-item" onclick="selectDate(this)">21</div>
+    <div class="date-item" onclick="selectDate(this)">22</div>
+    <div class="date-item" onclick="selectDate(this)">23</div>
+    <div class="date-item" onclick="selectDate(this)">24</div>
+    <div class="date-item" onclick="selectDate(this)">25</div>
+    <div class="date-item" onclick="selectDate(this)">26</div>
+    <div class="date-item" onclick="selectDate(this)">27</div>
+    <div class="date-item" onclick="selectDate(this)">28</div>
+    <div class="date-item" onclick="selectDate(this)">29</div>
+    <div class="date-item" onclick="selectDate(this)">30</div>
+    <div class="date-item" onclick="selectDate(this)">31</div>
+  </div>
+
+  
+</div>
+
+
+<div class="time hide" id="time">
+<h2>เลือกเวลา</h2>
+<div class="time-container">
+<div class="time-slot" onclick="selecttime(this)">10:00</div>
+<div class="time-slot"onclick="selecttime(this)">10:30</div>
+<div class="time-slot"onclick="selecttime(this)">11:00</div>
+<div class="time-slot"onclick="selecttime(this)">11:30</div>
+<div class="time-slot"onclick="selecttime(this)">12:00</div>
+<div class="time-slot"onclick="selecttime(this)">12:30</div>
+<div class="time-slot"onclick="selecttime(this)">13:00</div>
+<div class="time-slot"onclick="selecttime(this)">13:30</div>
+<div class="time-slot"onclick="selecttime(this)">14:00</div>
+<div class="time-slot"onclick="selecttime(this)">14:30</div>
+<div class="time-slot"onclick="selecttime(this)">15:00</div>
+<div class="time-slot"onclick="selecttime(this)">15:30</div>
+<div class="time-slot"onclick="selecttime(this)">16:00</div>
+<div class="time-slot"onclick="selecttime(this)">16:30</div>
+</div>
+
+<button id="confirmDateBtn" onclick="nexttime()" disabled>Confirm</button>
+</div>
+<div class="finish hide" id="finish">
+<input class="ant-checkbox-input" type="checkbox" value="true" name="acceptTermsAndConditions">
+<button type="submit" class="next-btn" style="cursor: pointer; background-color: rgb(221, 4, 32); border: 1px solid rgb(221, 4, 32);" onclick=" finalbtn()">Confirm Booking</button>
+</div>
+<script src="assets/js/main.js"></script>
+  <script src="assets/js/date.js"></script>
+ 
+
+</body>
+</html>
